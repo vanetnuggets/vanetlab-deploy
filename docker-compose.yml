@@ -8,6 +8,7 @@ services:
       - ./vanetlab-be:/app
       - ./vanetlab-ns3:/vlns3
     command: bash
+    network_mode: "host"
     ports:
       - "5000:5000"
     env_file:
